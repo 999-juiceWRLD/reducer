@@ -1,4 +1,5 @@
 import './App.css'
+import { Counter } from './Counter'
 import userData from "./data.json"
 
 function App() {
@@ -7,9 +8,14 @@ function App() {
     <>
     <div>
       <h1>Hello</h1>
-      {userData.map(e => (
-        <p key={e.id}>{e.name}</p>
-      ))}
+      <div className='counter-user'>
+        <Counter />
+        <div>
+          {userData.map(e => (
+            <p key={e.id}>{e.name}</p>
+          ))}
+        </div>
+      </div>
     </div>
     </>
   )
