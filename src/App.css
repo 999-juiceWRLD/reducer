@@ -11,6 +11,19 @@
   column-gap: 5rem;
 }
 
+.user-data {
+  display: block;
+}
+
+.user-data-hide {
+  display: none;
+}
+
+
+button.show-btn-none {
+  display: none;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
