@@ -18,7 +18,7 @@ export const ReducerComp = () => {
                     dispatch({ type: ACTION_TYPES.FETCH_ERROR })
                 }
             })
-            .then(data => { console.log(data) })
+            // .then(data => { console.log(data) })
             .catch(() => dispatch({ type: ACTION_TYPES.FETCH_ERROR }))
     }
 
